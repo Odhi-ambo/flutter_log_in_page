@@ -10,6 +10,7 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(title: '', home: SplashScreen());
+    return const MaterialApp(
+        debugShowCheckedModeBanner: false, title: '', home: SplashScreen());
   }
 }
