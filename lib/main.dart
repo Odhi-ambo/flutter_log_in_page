@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:login_page_flutter/pages/login_screen.dart';
+import 'package:login_page_flutter/pages/splash_screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -10,6 +10,6 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(title: 'Authetication Page', home: LoginScreen());
+    return const MaterialApp(title: '', home: SplashScreen());
   }
 }
