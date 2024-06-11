@@ -127,6 +127,7 @@ class SignIn extends StatelessWidget {
                         height: size.height * 0.06,
                       ),
                       Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
                           socialIcon("images/download (1).png"),
                           socialIcon("images/download.png"),
