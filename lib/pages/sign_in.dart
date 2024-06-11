@@ -85,7 +85,7 @@ class SignIn extends StatelessWidget {
                         width: size.width,
                         padding: const EdgeInsets.symmetric(vertical: 20),
                         decoration: BoxDecoration(
-                          color: buttonColor,
+                          color: primaryColor,
                           borderRadius: BorderRadius.circular(15),
                         ),
                         child: const Center(
@@ -102,6 +102,7 @@ class SignIn extends StatelessWidget {
                         height: size.height * 0.06,
                       ),
                       Row(
+                        mainAxisAlignment: MainAxisAlignment.center,
                         children: [
                           Container(
                             height: 2,
@@ -121,6 +122,16 @@ class SignIn extends StatelessWidget {
                             color: Colors.black12,
                           )
                         ],
+                      ),
+                      SizedBox(
+                        height: size.height * 0.06,
+                      ),
+                      Row(
+                        children: [
+                          socialIcon("images/download (1).png"),
+                          socialIcon("images/download.png"),
+                          socialIcon("images/download.jfif")
+                        ],
                       )
                     ],
                   ),
@@ -129,6 +140,20 @@ class SignIn extends StatelessWidget {
             ),
           ),
         ),
+      ),
+    );
+  }
+
+  Container socialIcon(image) {
+    return Container(
+      padding: EdgeInsets.symmetric(horizontal: 32, vertical: 25),
+      decoration: BoxDecoration(
+        borderRadius: BorderRadius.circular(15),
+        border: Border.all(color: Colors.white, width: 2),
+      ),
+      child: Image.asset(
+        image,
+        height: 35,
       ),
     );
   }
