@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/widgets.dart';
+import 'package:login_page_flutter/pages/landing_page.dart';
 import 'package:login_page_flutter/utils/colors.dart';
 
 class SignIn extends StatelessWidget {
@@ -88,13 +90,21 @@ class SignIn extends StatelessWidget {
                           color: primaryColor,
                           borderRadius: BorderRadius.circular(15),
                         ),
-                        child: const Center(
-                          child: Text(
-                            'Sign In',
-                            style: TextStyle(
-                                fontWeight: FontWeight.bold,
-                                fontSize: 22,
-                                color: Colors.white),
+                        child: Center(
+                          child: GestureDetector(
+                            onTap: () {
+                              Navigator.push(
+                                  context,
+                                  MaterialPageRoute(
+                                      builder: (context) => LandingPage()));
+                            },
+                            child: const Text(
+                              'Sign In',
+                              style: TextStyle(
+                                  fontWeight: FontWeight.bold,
+                                  fontSize: 22,
+                                  color: Colors.white),
+                            ),
                           ),
                         ),
                       ),
