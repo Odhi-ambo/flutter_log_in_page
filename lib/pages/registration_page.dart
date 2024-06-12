@@ -29,7 +29,10 @@ class _RegistrationPageState extends State<RegistrationPage> {
             const SizedBox(
               height: 25,
             ),
-            const Text('Let us sign you in'),
+            const Text(
+              'Let us sign you in!',
+              style: TextStyle(fontWeight: FontWeight.bold, fontSize: 16),
+            ),
             const SizedBox(
               height: 25,
             ),
